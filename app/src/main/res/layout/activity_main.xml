@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:context="com.merseyside.admin.seeworld.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:keepScreenOn="true"
+        android:textColor="@color/main_color"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:background="@drawable/pinguin_logo"
+        android:paddingBottom="@dimen/activity_margin">
+
+        <Button
+            android:text="@string/play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/play_button" />
+
+        <Button
+            android:text="@string/exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/exit_button" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>
